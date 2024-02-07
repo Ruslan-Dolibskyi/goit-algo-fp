@@ -110,8 +110,8 @@ list1.append(5)
 
 list2 = LinkedList()
 list2.append(2)
-list2.append(4)
 list2.append(6)
+list2.append(4)
 
 # Виведення вмісту списків
 print("Перший список:")
@@ -133,6 +133,9 @@ list1.print_list()
 
 print("Відсортований другий список:")
 list2.print_list()
+
+# Реверсування першого списк перед об'єднанням
+list1.reverse()
 
 # Об'єднання двох відсортованих списків
 merged_list = LinkedList.merge_sorted_lists(list1.head, list2.head)
